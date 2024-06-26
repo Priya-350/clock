@@ -1,0 +1,211 @@
+body{
+    width:100%;
+    background-image: url(nature.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:0;
+    margin:0;
+    position: fixed;
+     z-index:5;
+   
+}
+.cl{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top:200px ;
+    
+     z-index:1;
+}
+h2{
+    color:yellow;
+    text-align: center;
+    font-size:44px ;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+p{
+    color:white;
+}
+.clock .a{
+    display:flex;
+    flex-direction: row;
+    column-gap:15px ;
+    justify-content: center;
+    
+    
+}
+.clock .a p{
+    background-color: blueviolet;
+    font-size:60px ;
+    text-align: center;
+    align-content: center;
+   
+}
+.clock .b{
+    display:flex;
+    flex-direction: row;
+    column-gap:15px ;
+  
+    justify-content: center;
+    margin-left:55px ;
+    margin-top:-80px;
+}
+
+.clock .b p{
+    background-color: rgb(86, 5, 86);
+    align-content: center;
+    text-align: center;
+    font-size:20px ;
+}
+.clock .b #am{
+    background-color: rgb(13, 182, 13);
+}
+
+
+.clock .a #hr{
+    width:120px;
+    height:120px;
+}
+.clock .a #mn{
+    width:120px;
+    height:120px;
+}
+.clock .a #se
+{
+    width:120px;
+    height:120px;
+}
+.clock .b #hrs{
+    width: 120px;
+    height:30px;
+}
+.clock .b #mns{
+    width:120px;
+    height:30px;
+}
+.clock .b #ses{
+    width:120px;
+    height:30px;
+}
+.clock .b #am{
+    width:40px;
+    height:30px;
+}
+.clock
+{
+    display:flex;
+    flex-direction: column;
+    
+}
+.clock .time{
+    display:none;
+}
+
+@media (max-width:500px){
+    body{
+        width:100%;
+        margin: 0;
+        padding:0;
+        
+    }
+    .cl{
+       text-align: center;
+       margin-top:40%;
+       
+    }
+    h2{
+        font-size:30px ;
+        margin-bottom:-15px ;
+        text-align: center;
+        margin-left:17% ;
+        margin-right: 18%;
+        font-weight: bold;
+    }
+    .clock .a p{
+        
+        font-size:30px ;
+    }
+    .clock .a #hr{
+        width:60px;
+        height:60px;
+    }
+    .clock .a #mn{
+        width:60px;
+        height:60px;
+    }
+    .clock .a #se
+    {
+        width:60px;
+        height:60px;
+    }
+    .clock .b #hrs{
+        width: 60px;
+        height:23px;
+        font-size:18px ;
+    }
+    .clock .b #mns{
+        width:60px;
+        height:23px;
+        font-size:18px ;
+    }
+    .clock .b #ses{
+        width:60px;
+        height:23px;
+        font-size:18px ;
+    }
+    .clock .b #am{
+        width:35px;
+        height:23px;
+        font-size:18px ;
+    }
+    .clock{
+        width:100%;
+        justify-content: center;
+        max-width: 100%;
+        position:relative;
+        margin-top:90px ;
+        margin-left:-20px ;
+    }
+    
+    .clock .b{
+        position:absolute;
+        top:150px;
+        left:27.5px;
+        
+        
+    }
+    .clock .b{
+        display:none;
+    }
+    .clock .time{
+        display:flex;
+    }
+}
+
+@media (min-width:420px )and (max-width:500px){
+    .clock .b{
+       
+        position:absolute;
+        top:150px;
+        left:52px;
+        
+    }
+}
+@media (min-width:300px )and (max-width:350px){
+   h2{
+    font-size: 25px;
+    margin-top:70px ;
+   }
+   
+    .clock .b{
+        position:absolute;
+        top:150px;
+        left:0px;
+        
+    }
+}
